@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematika - Ta'lim Navigatori</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Matematika</h1>
+        <p>Matematika fanini biz bilan o'rganing!</p>
+    </header>
+
+    <main>
+        <h2>Matematika darslari</h2>
+
+        <div class="fanlar">
+
+            <div class="fan">
+                <h3>1-dars: Qo'shish va ayirish</h3>
+                <p>Sonlarni qo'shish va ayirishni o'rganing.</p>
+                <button onclick="darsniOchish(1)">Darsni ochish</button>
+            </div>
+
+            <div class="fan">
+                <h3>2-dars: Ko'paytirish va bo'lish</h3>
+                <p>Ko'paytirish va bo'lish amallari.</p>
+                <button onclick="darsniOchish(2)">Darsni ochish</button>
+            </div>
+
+            <div class="fan">
+                <h3>3-dars: Tenglamalar</h3>
+                <p>Oddiy tenglamalarni yechishni o'rganing.</p>
+                <button onclick="darsniOchish(3)">Darsni ochish</button>
+            </div>
+
+        </div>
+
+        <section id="dars1" class="dars">
+            <h2>1-dars: Qo'shish va ayirish</h2>
+            <p>Qo'shish — sonlarni bir-biriga qo'shish amali.</p>
+            <h3>Misol: 5 + 3 = 8</h3>
+            <p>Ayirish — bir sondan ikkinchi sonni ayirish amali.</p>
+            <h3>Misol: 9 - 4 = 5</h3>
+        </section>
+
+        <section id="dars2" class="dars">
+            <h2>2-dars: Ko'paytirish va bo'lish</h2>
+            <p>Ko'paytirish — bir xil sonlarni takroran qo'shish.</p>
+            <h3>Misol: 4 × 3 = 12</h3>
+            <p>Bo'lish — sonni teng qismlarga ajratish.</p>
+            <h3>Misol: 12 ÷ 3 = 4</h3>
+        </section>
+
+        <section id="dars3" class="dars">
+            <h2>3-dars: Tenglamalar</h2>
+            <p>Tenglama — noma'lum son qatnashgan matematik ifoda.</p>
+            <h3>Misol: x + 5 = 10</h3>
+            <h3>Javob: x = 5</h3>
+        </section>
+
+        <section class="test">
+            <h2>Bilimingizni sinab ko'ring!</h2>
+            <p>5 + 7 nechaga teng?</p>
+
+            <button onclick="javobniTekshir(10)">10</button>
+            <button onclick="javobniTekshir(12)">12</button>
+            <button onclick="javobniTekshir(13)">13</button>
+        </section>
+
+        <br>
+        <button onclick="boshSahifa()">Bosh sahifaga qaytish</button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

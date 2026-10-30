@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.fanlar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+.fan {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000015;
+}
+
+.fan h3 {
+    margin-bottom: 12px;
+    color: #123c69;
+}
+
+.fan p {
+    margin-bottom: 20px;
+}
+
+button {
+    background: #123c69;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+footer {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 650px) {
+    .fanlar {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dars {
+    display: none;
+    background: white;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000015;
+}
+
+.dars h2 {
+    color: #123c69;
+    margin-bottom: 15px;
+}
+
+.dars p {
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+.dars h3 {
+    margin: 15px 0;
+    color: #123c69;
+}
+
+.dars button {
+    margin: 5px;
+}
+
+.test {
+    display: block;
+    background: white;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000015;
+}
+
+.test h2 {
+    color: #123c69;
+    margin-bottom: 15px;
+}
